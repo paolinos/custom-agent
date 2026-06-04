@@ -17,7 +17,7 @@
       },
       "models": {
         "qwen/qwen3.5-9b": {
-          "id": "qwen3.5-9b",
+          "id": "qwen/qwen3.5-9b",
           "name": "Qwen 3.5 9B",
           "tool_call": false,
           "limit": {
