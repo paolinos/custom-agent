@@ -1,6 +1,10 @@
-FROM oven/bun
+FROM oven/bun:alpine
 
 RUN bun add -g opencode-ai
+
+# For Golang integrations
+# apk add go
+RUN apk add curl nodejs
 
 WORKDIR /app
 
