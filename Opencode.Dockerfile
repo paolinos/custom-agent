@@ -4,7 +4,7 @@ RUN bun add -g opencode-ai
 
 # For Golang integrations
 # apk add go
-RUN apk add curl nodejs
+RUN apk add curl nodejs go make
 
 WORKDIR /app
 
