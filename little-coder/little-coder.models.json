@@ -1,0 +1,18 @@
+{
+  "providers": {
+    "llamacpp": {
+      "api": "openai-completions",
+      "baseUrl": "http://host.containers.internal:1234/v1",
+      "apiKey": "",
+      "models": [
+        {
+            "id": "ornith-1.0-9b",
+            "name": "ornith-1.0-9b",
+            "reasoning": true,
+            "contextWindow": 32768,
+            "maxTokens": 5000
+        }
+      ]
+    }
+  }
+}
