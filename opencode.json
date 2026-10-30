@@ -24,6 +24,15 @@
             "context": 32768,
             "output": 4096
           }
+        },
+        "lmstudio-community/Ornith-1.0-9B": {
+          "id": "lmstudio-community/Ornith-1.0-9B-GGUF",
+          "name": "Ornith 1.0 9B",
+          "tool_call": false,
+          "limit": {
+            "context": 32768,
+            "output": 4096
+          }
         }
       }
     }

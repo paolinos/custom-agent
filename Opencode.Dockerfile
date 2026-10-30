@@ -1,10 +1,11 @@
-FROM oven/bun:alpine
+FROM ubuntu:26.10
 
-RUN bun add -g opencode-ai
+RUN apt-get update && apt-get install -y curl nodejs make rustc cargo
 
-# For Golang integrations
-# apk add go
-RUN apk add curl nodejs go make
+RUN curl -fsSL https://opencode.ai/v2/install | bash
+
+ENV PATH="/root/.opencode/bin:$PATH"
+
 
 WORKDIR /app
 
